@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Topic 5_Assignment 1"

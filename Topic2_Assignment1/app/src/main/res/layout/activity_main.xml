@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerInParent="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="UserName"
+            android:id="@+id/username"
+            android:background="@drawable/background_design"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/username"
+            android:background="@drawable/background_design" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Login"
+            android:layout_below="@+id/password"
+            android:background="#3f76ff"
+            android:textColor="#fff"
+            android:id="@+id/loginButton"/>
+        <Button
+            android:id="@+id/nextPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/loginButton"
+            android:background="#FFFF00"
+            android:text="Linear layout-> Login"
+            android:textSize="17sp"
+            android:textColor="@color/colorPrimaryDark"/>
+    </RelativeLayout>
+</RelativeLayout>
